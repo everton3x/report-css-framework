@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8">
+        <title>Exemplo de estrutura de relatórios :: Report CSS</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <link rel="home" href="https://github.com/everton3x/report-css-framework" title="Home" >
+        <link rel="stylesheet" href="../css/report.css" type="text/css">
+        <meta property="og:type" content="website">
+    </head>
+    <body class="report">
+        <header>
+            <h1>Título do Relatórios</h1>
+            <h2>Subtítulo do relatório</h2>
+            <p data-type="author">Everton da Rosa</p>
+            <div data-type="resume">
+                <p>O seu relatório pode ter uma espécie de resumo ementa.</p>
+                <p>Nele você pode explicitar os objetivos do relatório.</p>
+            </div>
+        </header>
+        <main>
+            
+            <article>
+                <h1>Título do capítulo</h1>
+                <section>
+                    <h1>Título da seção</h1>
+                    <p>Um relatório é dividido em seções.</p>
+                    <p>Cada seção geralmente possui um título seguido do conteúdo.</p>
+                    <p>O conteúdo engloba parágrafos de texto, como este, além de outros tipos, como citações:</p>
+                    <blockquote cite="https://pt.lipsum.com/">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at felis quis est ullamcorper lobortis eget viverra nulla. Proin semper elit at felis gravida hendrerit. Nullam nec eros vitae velit sagittis congue. Donec metus tellus, placerat ut ligula condimentum, varius placerat enim. Praesent nisl enim, dictum vitae neque congue, eleifend rutrum tortor. Ut aliquam, libero vel maximus pharetra, purus est posuere turpis, id lacinia magna enim a augue. Proin nulla velit, egestas sit amet nibh a, efficitur tristique ipsum. Integer vitae molestie velit.</p>
+                        <p>Pellentesque ut pellentesque quam. Donec nec leo ante. Nulla vitae nulla in magna pulvinar finibus. Proin vel quam viverra, posuere purus et, convallis enim. Aliquam erat volutpat. Donec efficitur id urna ut rutrum. Sed sed euismod nisi, in porttitor dui. Vestibulum commodo tempor velit nec dignissim. Aliquam neque odio, viverra sed libero non, efficitur egestas orci. Nunc sit amet tincidunt ipsum. Aenean augue massa, elementum pulvinar diam non, vulputate bibendum neque.</p>
+                        <cite>Lorem Ipsum</cite>
+                    </blockquote>
+                    <p>Citações também podem ser feitas de forma <i>inline</i> como <q cite="https://www.pensador.com/autor/david_ribeiro_guilherme/">Não é a linguagem de programação que define o programador, mas sim sua lógica.<cite>Davi Ribeiro Guilherme</cite></q></p>
+                </section>
+
+                <section>
+                    <h1>Seção com subseções</h1>
+                    <p>Uma seção pode ter subseções, e as subseções podem conter outras subseções.</p>
+                    
+                    <section>
+                        <h2>Nível de aninhamento máximo</h2>
+                        <p>Você pode aninhar até 6 níveis de seções. Isso porque o HTML suporta cabeçalhos com tag H até H6.</p>
+                    </section>
+
+                    <section>
+                        <h2>Subseção com títulos em sequência</h2>
+                        <h3>Cabeçalho de 3º nível</h3>
+                        <p>Você pode colocar os cabeçalhos em sequência sempre que desejar.</p>
+                    </section>
+                </section>
+            </article>
+            <hr>
+
+            <article>
+                <h1>Cabeçalho 1</h1>
+                <h2>Cabeçalho 2</h2>
+                <h3>Cabeçalho 3</h3>
+                <h4>Cabeçalho 4</h4>
+                <h5>Cabeçalho 5</h5>
+                <h6>Cabeçalho 6</h6>
+                <section>
+                    <p>Este é um exemplo de aninhamento de cabeçalhos.</p>
+                </section>
+            </article>
+            <article>
+                <p>Uma tag ARTICLE usada como filha direta de MAIN corresponde a um capítulo do seu relatório.</p>
+                <p>Ela não precisa conter um título, porém isso é desencorajado.</p>
+                <p>Recomenda-se que cada capítulo seja separadao por uma tag HR, pois esta tag representa uma mudança no assunto tratado.</p>
+            </article>
+            <hr>
+
+            <article>
+                <h1>Listas</h1>
+                <section>
+                    <h2>Listas ordenadas</h2>
+                    <p>Listas ordenadas são feitas com a tag OL.</p>
+                    <ol>
+                        <li>Ítem 1</li>
+                        <li>Ítem 2</li>
+                        <li>Ítem 3</li>
+                        <li>Ítem 4</li>
+                        <li>Ítem 5</li>
+                    </ol>
+                </section>
+                
+                <section>
+                    <h2>Listas ordenadas</h2>
+                    <p>Listas não ordenadas são feitas com a tag UL.</p>
+                    <ul>
+                        <li>Ítem 1</li>
+                        <li>Ítem 2</li>
+                        <li>Ítem 3</li>
+                        <li>Ítem 4</li>
+                        <li>Ítem 5</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h2>Listas multinível</h2>
+                    <p>Listas podem ter vários níveis de alinhamento.</p>
+                    <ol>
+                        <li>Nível 1</li>
+                        <li>
+                            <p>Nível 2</p>
+                            <ol>
+                                <li>Ítem</li>
+                                <li>Ítem</li>
+                                <li>
+                                    <p>Nível 3</p>
+                                    <ol>
+                                        <li>Ítem</li>
+                                        <li>Ítem</li>
+                                        <li>Ítem</li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li>Nível 1</li>
+                    </ol>
+                    <ul>
+                        <li>Nível 1</li>
+                        <li>
+                            <p>Nível 2</p>
+                            <ul>
+                                <li>Ítem</li>
+                                <li>Ítem</li>
+                                <li>
+                                    <p>Nível 3</p>
+                                    <ul>
+                                        <li>Ítem</li>
+                                        <li>Ítem</li>
+                                        <li>Ítem</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Nível 1</li>
+                    </ul>
+                    <ol>
+                        <li>Nível 1</li>
+                        <li>
+                            <p>Nível 2</p>
+                            <ul>
+                                <li>Ítem</li>
+                                <li>Ítem</li>
+                                <li>
+                                    <p>Nível 3</p>
+                                    <ol>
+                                        <li>Ítem</li>
+                                        <li>Ítem</li>
+                                        <li>Ítem</li>
+                                    </ol>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Nível 1</li>
+                    </ol>
+                </section>
+            </article>
+            <hr>
+
+            <article>
+                <h1>Tabelas</h1>
+                <section>
+                    <table>
+                        <caption>Exemplo de tabela</caption>
+                        <thead>
+                            <tr>
+                                <th>Coluna 1</th>
+                                <th>Coluna 2</th>
+                                <th>Coluna 3</th>
+                                <th>Coluna 4</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Célula 1:1</td>
+                                <td>Célula 1:2</td>
+                                <td>Célula 1:3</td>
+                                <td>Célula 1:4</td>
+                            </tr>
+                            <tr>
+                                <td>Célula 2:1</td>
+                                <td>Célula 2:2</td>
+                                <td>Célula 2:3</td>
+                                <td>Célula 2:4</td>
+                            </tr>
+                            <tr>
+                                <td>Célula 3:1</td>
+                                <td>Célula 3:2</td>
+                                <td>Célula 3:3</td>
+                                <td>Célula 3:4</td>
+                            </tr>
+                            <tr>
+                                <td>Célula 4:1</td>
+                                <td>Célula 4:2</td>
+                                <td>Célula 4:3</td>
+                                <td>Célula 4:4</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th>Rodapé 1</th>
+                                <th>Rodapé 2</th>
+                                <th>Rodapé 3</th>
+                                <th>Rodapé 4</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <cite>Fonte da tabela</cite>
+                </section>
+            </article>
+        </main>
+        <footer>
+                <p data-type="place-data">Três de Maior, RS, <time datetime="2022-05-29">29 de maio de 2022</time></p>
+                <div data-type="signatures"></div>
+        </footer>
+    </body>
+</html>
