@@ -404,3 +404,51 @@ table {
 	font-style: italic;
 	quotes: """ """ "'" "'";
 }
+
+/* Alinhamento */
+.report .left {
+	text-align: left;
+}
+
+.report .right {
+	text-align: right;
+}
+
+.report .center {
+	text-align: center;
+}
+
+.report .justify {
+	text-align: justify;
+}
+
+/* Indicadores coloridos */
+.report > main > article table .positive {
+	border-color: #0A3409;
+	background-color: #559E54;
+	color: #000000;
+}
+
+.report > main > article table .negative {
+	border-color: #A72002;
+	background-color: #FE8F77;
+	color: #000000;
+}
+
+.report > main > article table .warning {
+	border-color: #9C6902;
+	background-color: #FDCD6D;
+	color: #000000;
+}
+
+.report .positive {
+	color: #559E54;
+}
+
+.report .negative {
+	color: #FE8F77;
+}
+
+.report .warning {
+	color: #FDCD6D;
+}
