@@ -35,15 +35,15 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	/* list-style: none; */
 }
 blockquote, q {
-	quotes: none;
+	/* quotes: none; */
 }
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+	/* content: '';
+	content: none; */
 }
 table {
 	border-collapse: collapse;
@@ -51,5 +51,356 @@ table {
 }
 
 .report {
-    
+    font-size: 12pt;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #000000;
+	margin: 3em 2em 2em 3em;
+}
+
+/* Parágrafos */
+.report p {
+	text-align: justify;
+	margin-top: 0.25em;
+	margin-bottom: 0.75em;
+	line-height: 1.5em;
+	text-indent: 4em;
+}
+
+/* Cabeçalho do realtório */
+.report > header {
+
+}
+
+/* Título do relatório */
+.report > header > h1 {
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 5em;
+	margin-bottom: 1em;
+	font-size: 14pt;
+}
+
+/* Subtítulo do relatório */
+.report > header > h2 {
+	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-size: 14pt;
+	font-style: italic;
+}
+
+/* Ementa */
+.report > header > *[data-type=resume] {
+	text-align: justify;
+	width: 80%;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	font-style: italic;
+}
+
+.report > header > *[data-type=resume] p {
+	text-indent: 0;
+}
+
+/* TOC */
+.report > nav {
+	margin: 3em 0em 3em 0em;
+}
+
+.report > nav > h1 {
+	font-weight: bolder;
+	border-bottom: 2px solid black;
+}
+
+.report > nav > a {
+	display: block;
+	color: #000000;
+	text-decoration: none;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.report > nav > a:hover {
+	text-decoration: underline;
+}
+
+.report > nav > a[data-level="1"] {
+	font-weight: bold;
+}
+
+.report > nav > a[data-level="2"] {
+	font-weight: bold;
+	margin-left: 1em;
+}
+
+.report > nav > a[data-level="3"] {
+	font-style: italic;
+	margin-left: 2em;
+}
+
+.report > nav > a[data-level="4"] {
+	font-style: italic;
+	margin-left: 3em;
+}
+
+.report > nav > a[data-level="5"] {
+	margin-left: 4em;
+}
+
+.report > nav > a[data-level="6"] {
+	margin-left: 5em;
+}
+
+/* Corpo do relatório */
+
+.report > main {
+	margin: 3em 0em 3em 0em;
+}
+
+/* Capítulos */
+.report > main > article {
+	margin: 3em 0em 0em 0em;
+}
+
+.report > main > article:first-child {
+	margin: 0em 0em 0em 0em;
+}
+
+.report > main > article:last-child {
+	margin: 3em 0em 0em 0em;
+}
+
+/* Títulos dos capítulos */
+.report > main > article h1, h2, h3, h4, h5, h6 {
+	margin: 1.5em 0em 0.5em 0em;
+}
+.report > main > article h1 {
+	font-weight: bolder;
+	border-bottom: #000000 solid 2px;
+	text-transform: uppercase;
+	font-size: 14pt;
+}
+
+.report > main > article h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12pt;
+}
+
+.report > main > article h3 {
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 12pt;
+}
+
+.report > main > article h4 {
+	text-transform: uppercase;
+	font-size: 12pt;
+}
+
+.report > main > article h5 {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.report > main > article h6 {
+	font-style: italic;
+	font-size: 12pt;
+}
+
+/* Títulos das seções */
+.report > main > article > section h1, h2, h3, h4, h5, h6 {
+	margin: 1.5em 0em 0.5em 0em;
+}
+.report > main > article > section h1 {
+	font-weight: bolder;
+	text-transform: uppercase;
+	font-size: 14pt;
+}
+
+.report > main > article > section h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 12pt;
+}
+
+.report > main > article > section h3 {
+	font-style: italic;
+	text-transform: uppercase;
+	font-size: 12pt;
+}
+
+.report > main > article > section h4 {
+	font-size: 12pt;
+}
+
+.report > main > article > section h5 {
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.report > main > article > section h6 {
+	font-style: italic;
+	font-size: 12pt;
+}
+
+/* Listas */
+.report > main > article ol, ul {
+	margin: 1em 0em 1em 4em;
+}
+
+.report > main > article li {
+	margin-left: 1em;
+	list-style-position: inside;
+}
+
+/* Tabelas */
+.report > main > article table {
+	border-top: #000000 solid 2px;
+	border-bottom: #000000 solid 2px;
+	margin: 1em auto 1em auto;
+}
+
+.report > main > article table > caption {
+	font-style: italic;
+	text-align: left;
+	padding-bottom: 0.3em;
+}
+
+.report > main > article table th, td {
+	padding: 0.2em;
+}
+
+.report > main > article table th {
+	font-weight: bold;
+}
+
+.report > main > article table > thead {
+	border-bottom: #000000 solid 2px;
+}
+
+.report > main > article table > tfoot {
+	border-top: #000000 solid 2px;
+}
+
+.report > main > article table tr > th, td{
+	border-bottom: #000000 solid 1px;
+}
+
+/* Figuras */
+.report > main > article figure {
+	margin: 1em auto 1em auto;
+	display: table;
+}
+
+.report > main > article figure > figcaption {
+	text-align: left;
+}
+
+/* Lista de termos */
+.report > main > article dl {
+	margin: 4em 0 1em 0;
+}
+
+.report > main > article dl > dt {
+	font-weight: bold;
+	margin: 0.5em 0 0.3em 0;
+}
+
+.report > main > article dl > dd {
+	font-style: italic;
+	margin: 0 0 0.5em 1em;
+}
+
+/* Caixas destacadas */
+.report > main >article *[data-type^="box"] {
+	width: 80%;
+	border: #000000 solid 1px;
+	margin: 1em auto 1em auto;
+	padding: 0.3em 0.3em 0.3em 0.3em;
+}
+
+.report > main >article *[data-type^="box"] > p {
+	text-indent: 0;
+}
+
+.report > main >article *[data-type="box-info"] {
+	border-color: #091D34;
+	background-color: #609CE1;
+	color: #000000;
+}
+
+.report > main >article *[data-type="box-positive"] {
+	border-color: #0A3409;
+	background-color: #559E54;
+	color: #000000;
+}
+
+.report > main >article *[data-type="box-negative"] {
+	border-color: #A72002;
+	background-color: #FE8F77;
+	color: #000000;
+}
+
+.report > main >article *[data-type="box-warning"] {
+	border-color: #9C6902;
+	background-color: #FDCD6D;
+	color: #000000;
+}
+
+/* Rodapé do relatório */
+.report > footer {
+	
+}
+
+/* Local e data */
+.report > footer > *[data-type="place-data"] {
+	text-align: center;
+	font-style: italic;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+/* Assinaturas */
+.report > footer > div[data-type="signatures"] {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: flex-start;
+	margin-top: 5em;
+}
+
+.report > footer > div[data-type="signatures"] > * > * {
+	text-align: center;
+	text-indent: 0;
+	margin: 0.1em;
+}
+
+.report > footer > div[data-type="signatures"] > * > *:first-child {
+	border-top: #000000 solid 1px;
+	text-transform: uppercase;
+}
+
+/* Citações */
+.report > main > article blockquote {
+	margin: 3em 3em 3em 20em;
+	font-style: italic;
+}
+
+.report > main > article blockquote p {
+	text-indent: 0;
+}
+
+.report > main > article cite {
+	font-style: italic;
+}
+
+.report > main > article q {
+	font-style: italic;
+	quotes: """ """ "'" "'";
 }

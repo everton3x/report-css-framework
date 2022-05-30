@@ -14,12 +14,37 @@
         <header>
             <h1>Título do Relatórios</h1>
             <h2>Subtítulo do relatório</h2>
-            <p data-type="author">Everton da Rosa</p>
             <div data-type="resume">
                 <p>O seu relatório pode ter uma espécie de resumo ementa.</p>
                 <p>Nele você pode explicitar os objetivos do relatório.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at felis quis est ullamcorper lobortis eget viverra nulla. Proin semper elit at felis gravida hendrerit. Nullam nec eros vitae velit sagittis congue. Donec metus tellus, placerat ut ligula condimentum, varius placerat enim. Praesent nisl enim, dictum vitae neque congue, eleifend rutrum tortor. Ut aliquam, libero vel maximus pharetra, purus est posuere turpis, id lacinia magna enim a augue. Proin nulla velit, egestas sit amet nibh a, efficitur tristique ipsum. Integer vitae molestie velit.</p>
             </div>
         </header>
+
+        <nav>
+            <h1>Sumário</h1>
+            <a href="#" data-level="1">Título do capítulo</a>
+            <a href="#" data-level="2">Título da seção</a>
+            <a href="#" data-level="2">Seção com subseções</a>
+            <a href="#" data-level="3">Nível de aninhamento máximo</a>
+            <a href="#" data-level="3">Subseção com títulos em sequência</a>
+            <a href="#" data-level="4">Cabeçalho de 3º nível</a>
+            <a href="#" data-level="1">Cabeçalho 1</a>
+            <a href="#" data-level="2">Cabeçalho 2</a>
+            <a href="#" data-level="3">Cabeçalho 3</a>
+            <a href="#" data-level="4">Cabeçalho 4</a>
+            <a href="#" data-level="5">Cabeçalho 5</a>
+            <a href="#" data-level="6">Cabeçalho 6</a>
+            <a href="#" data-level="1">Listas</a>
+            <a href="#" data-level="2">Listas ordenadas</a>
+            <a href="#" data-level="2">Listas ordenadas</a>
+            <a href="#" data-level="2">Listas multinível</a>
+            <a href="#" data-level="1">Tabelas</a>
+            <a href="#" data-level="1">Figuras</a>
+            <a href="#" data-level="1">Lista de termos</a>
+            <a href="#" data-level="1">Caixas destacadas</a>
+        </nav>
+
         <main>
             
             <article>
@@ -34,7 +59,7 @@
                         <p>Pellentesque ut pellentesque quam. Donec nec leo ante. Nulla vitae nulla in magna pulvinar finibus. Proin vel quam viverra, posuere purus et, convallis enim. Aliquam erat volutpat. Donec efficitur id urna ut rutrum. Sed sed euismod nisi, in porttitor dui. Vestibulum commodo tempor velit nec dignissim. Aliquam neque odio, viverra sed libero non, efficitur egestas orci. Nunc sit amet tincidunt ipsum. Aenean augue massa, elementum pulvinar diam non, vulputate bibendum neque.</p>
                         <cite>Lorem Ipsum</cite>
                     </blockquote>
-                    <p>Citações também podem ser feitas de forma <i>inline</i> como <q cite="https://www.pensador.com/autor/david_ribeiro_guilherme/">Não é a linguagem de programação que define o programador, mas sim sua lógica.<cite>Davi Ribeiro Guilherme</cite></q></p>
+                    <p>Citações também podem ser feitas de forma <i>inline</i> como <q cite="https://www.pensador.com/autor/david_ribeiro_guilherme/">Não é a linguagem de programação que define o programador, mas sim sua lógica. <cite>Davi Ribeiro Guilherme</cite></q></p>
                 </section>
 
                 <section>
@@ -105,12 +130,12 @@
                     <ol>
                         <li>Nível 1</li>
                         <li>
-                            <p>Nível 2</p>
+                            <span>Nível 2</span>
                             <ol>
                                 <li>Ítem</li>
                                 <li>Ítem</li>
                                 <li>
-                                    <p>Nível 3</p>
+                                    <span>Nível 3</span>
                                     <ol>
                                         <li>Ítem</li>
                                         <li>Ítem</li>
@@ -124,12 +149,12 @@
                     <ul>
                         <li>Nível 1</li>
                         <li>
-                            <p>Nível 2</p>
+                            <span>Nível 2</span>
                             <ul>
                                 <li>Ítem</li>
                                 <li>Ítem</li>
                                 <li>
-                                    <p>Nível 3</p>
+                                    <span>Nível 3</span>
                                     <ul>
                                         <li>Ítem</li>
                                         <li>Ítem</li>
@@ -143,12 +168,12 @@
                     <ol>
                         <li>Nível 1</li>
                         <li>
-                            <p>Nível 2</p>
+                            <span>Nível 2</span>
                             <ul>
                                 <li>Ítem</li>
                                 <li>Ítem</li>
                                 <li>
-                                    <p>Nível 3</p>
+                                    <span>Nível 3</span>
                                     <ol>
                                         <li>Ítem</li>
                                         <li>Ítem</li>
@@ -211,13 +236,126 @@
                             </tr>
                         </tfoot>
                     </table>
-                    <cite>Fonte da tabela</cite>
+                </section>
+
+                <section>
+                    <figure>
+                        <figcaption>Uma tabela dentro de uma figura</figcaption>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Coluna 1</th>
+                                    <th>Coluna 2</th>
+                                    <th>Coluna 3</th>
+                                    <th>Coluna 4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Célula 1:1</td>
+                                    <td>Célula 1:2</td>
+                                    <td>Célula 1:3</td>
+                                    <td>Célula 1:4</td>
+                                </tr>
+                                <tr>
+                                    <td>Célula 2:1</td>
+                                    <td>Célula 2:2</td>
+                                    <td>Célula 2:3</td>
+                                    <td>Célula 2:4</td>
+                                </tr>
+                                <tr>
+                                    <td>Célula 3:1</td>
+                                    <td>Célula 3:2</td>
+                                    <td>Célula 3:3</td>
+                                    <td>Célula 3:4</td>
+                                </tr>
+                                <tr>
+                                    <td>Célula 4:1</td>
+                                    <td>Célula 4:2</td>
+                                    <td>Célula 4:3</td>
+                                    <td>Célula 4:4</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th>Rodapé 1</th>
+                                    <th>Rodapé 2</th>
+                                    <th>Rodapé 3</th>
+                                    <th>Rodapé 4</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <figcaption>Fonte: Exemplo</figcaption>
+                    </figure>
                 </section>
             </article>
+            <hr>
+
+            <article>
+                <h1>Figuras</h1>
+                <section>
+                    <figure>
+                        <figcaption>Uma figura de exemplo</figcaption>
+                        <img src="https://pixabay.com/get/gf3c8cda022cfd8a4e092a1869b4f40b5692ccbc81593006c56e3ab29af5236ca65ef14d913cfe7673f863a938e906bd8746ec3b7370dfa5d07cc788d4055a9f6a602d7c554dc69cab484d796330673d5_640.png">
+                    </figure>
+
+                    <figure>
+                        <img src="https://pixabay.com/get/gf3c8cda022cfd8a4e092a1869b4f40b5692ccbc81593006c56e3ab29af5236ca65ef14d913cfe7673f863a938e906bd8746ec3b7370dfa5d07cc788d4055a9f6a602d7c554dc69cab484d796330673d5_640.png">
+                        <figcaption>Uma figura de exemplo com a legenda inferior</figcaption>
+                    </figure>
+                </section>
+            </article>
+            <hr>
+
+            <article>
+                <h1>Lista de termos</h1>
+                <p>Relatórios podem conter lista de termos e definições.</p>
+                <dl>
+                    <dt>Café</dt>
+                    <dd>Bebida dos deuses.</dd>
+                    <dt>Cerveja</dt>
+                    <dd>Bebida que cria barriga.</dd>
+                </dl>
+            </article>
+            <hr>
+
+            <article>
+                <h1>Caixas destacadas</h1>
+                <p>Caixas destacadas tem a função de destacar algum conteúdo importante no relatório.</p>
+                <div data-type="box-info">
+                    <p>Informações</p>
+                </div>
+                <div data-type="box-positive">
+                    <p>Informações positivas</p>
+                </div>
+                <div data-type="box-negative">
+                    <p>Informações negativas</p>
+                </div>
+                <div data-type="box-warning">
+                    <p>Informações de alerta</p>
+                </div>
+            </article>
+
         </main>
         <footer>
-                <p data-type="place-data">Três de Maior, RS, <time datetime="2022-05-29">29 de maio de 2022</time></p>
-                <div data-type="signatures"></div>
+                <p data-type="place-data">Três de Maio, RS, <time datetime="2022-05-29">29 de maio de 2022</time></p>
+                <div data-type="signatures">
+                    <div>
+                        <p>Nome</p>
+                        <p>Cargo</p>
+                        <p>Documento</p>
+                    </div>
+                    <div>
+                        <p>Nome Mais Longo</p>
+                        <p>Cargo</p>
+                        <p>Documento</p>
+                    </div>
+                    <div>
+                        <p>Nome Muito Mais Longo</p>
+                        <p>Cargo</p>
+                        <p>Documento</p>
+                    </div>
+                </div>
         </footer>
     </body>
 </html>
