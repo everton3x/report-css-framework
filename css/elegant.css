@@ -1,0 +1,330 @@
+/* Estilos para relatório */
+
+/* CSS Reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	/* list-style: none; */
+}
+blockquote, q {
+	/* quotes: none; */
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	/* content: '';
+	content: none; */
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Estilos do relatório */
+
+main.report {
+    margin: 2em 8em 2em 8em;
+    color: #000000;
+    background-color: #ffffff;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main.report > header {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 0.30em #000000 double;
+    border-bottom: 0.3em #000000 double;
+}
+
+main.report > header > h1 {
+    font-weight: bolder;
+    font-size: 16pt;
+    text-transform: uppercase;
+}
+
+main.report > header > h2 {
+    font-weight: lighter;
+    font-size: 14pt;
+    font-style: italic;
+}
+
+main.report > header > p {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-style: italic;
+    text-align: justify;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+main.report > article {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+main.report > article > section {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+main.report > article > section > h1 {
+    font-weight: bolder;
+    font-size: 16pt;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+main.report > article > section > h2 {
+    font-weight: bolder;
+    font-size: 14pt;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+main.report > article > section > h3 {
+    font-weight: bolder;
+    font-size: 12pt;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+main.report > article > section > h4 {
+    font-style: italic;
+    font-size: 16pt;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+main.report > article > section > h5 {
+    font-style: italic;
+    font-size: 14pt;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+main.report > article > section > h6 {
+    font-style: italic;
+    font-size: 12pt;
+    text-align: left;
+    margin-bottom: 0.5em;
+}
+
+main.report > article > section > p {
+    font-style: normal;
+    font-size: 12pt;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: justify;
+}
+
+main.report > article > hr {
+    border-bottom: #000000 solid 0.15em;
+    border-collapse: collapse;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+main.report > article > section > hr {
+    border-bottom: #000000 solid 0.10em;
+    border-collapse: collapse;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+main.report > article > section ul,
+main.report > article > section ol {
+    margin-left: 2em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+main.report > article > section ul > li,
+main.report > article > section ol > li {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+    margin-left: 0.5em;
+}
+
+main.report > article > section table {
+    border-top: #000000 double 0.25em;
+    border-bottom: #000000 double 0.25em;
+    margin: 1em 1em 1em 1em;
+    border-collapse: collapse;
+}
+
+main.report > article > section table > caption {
+    border-top: #000000 double 0.3em;
+    border-bottom: none;
+    text-align: left;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    font-style: italic;
+}
+
+main.report > article > section table > thead {
+    border-bottom: #000000 solid 0.05em;
+    border-top: none;
+}
+
+main.report > article > section table > thead > tr > th,
+main.report > article > section table > tfoot > tr > th {
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    font-weight: bold;
+    border-right: #999999 solid 0.05em;
+    border-top: none;
+    border-bottom: none;
+}
+
+main.report > article > section table > thead > tr > th:last-child,
+main.report > article > section table > tfoot > tr > th:last-child {
+    border-right: none;
+}
+
+main.report > article > section table > tbody > tr > td {
+    padding: 0.2em 0.2em 0.2em 0.2em;
+    border-right: #999999 solid 0.05em;
+    border-bottom: #999999 solid 0.05em;
+}
+
+main.report > article > section table > tbody > tr:last-child {
+    border-bottom: none;
+}
+
+main.report > article > section table > tbody > tr > td:last-child {
+    border-right: none;
+}
+
+main.report > article > section table > tfoot {
+    border-top: #000000 solid 0.1em;
+    border-bottom: none;
+}
+
+main.report > article > section figure {
+    text-align: center;
+}
+
+main.report > article > section figure > figcaption {
+    font-style: italic;
+}
+
+main.report > article > section dl {
+    margin-left: 2em;
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+}
+
+main.report > article > section dl > dt {
+    font-weight: bold;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+main.report > article > section dl > dd {
+    font-style: italic;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+}
+
+main.report > article > section blockquote {
+    margin-left: 10em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    font-style: italic;
+    text-align: justify;
+}
+
+main.report > article > section > p q {
+    font-style: italic;
+    quotes: """ """ "'" "'";
+}
+
+main.report > article > section > p cite {
+    font-style: italic;
+}
+
+main.report .left {
+	text-align: left;
+}
+
+main.report .right {
+	text-align: right;
+}
+
+main.report .center {
+	text-align: center;
+}
+
+main.report .justify {
+	text-align: justify;
+}
+
+main.report > article > section table .positive {
+	background-color: #559E54;
+	color: #000000;
+}
+
+main.report > article > section table .negative {
+	background-color: #FE8F77;
+	color: #000000;
+}
+
+main.report > article > section table .warn {
+	background-color: #FDCD6D;
+	color: #000000;
+}
+
+main.report > article > section .positive {
+	color: #559E54;
+}
+
+main.report > article > section .negative {
+	color: #950E17;
+}
+
+main.report > article > section .warn {
+	color: #FC600A;
+}
+
+main.report > footer {
+    margin-top: 1em;
+    margin-bottom: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 0.30em #000000 double;
+    border-bottom: none;
+}
